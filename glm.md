@@ -55,6 +55,9 @@ Can be manipulated with:
     vec3 normalized = glm::normalize(vec3) // Normalize a vector
     float mag = glm::length(vec3) // Get Vector’s magnitude
     
+    vec4 point(0.2, 2.6, 4.5, 1.0);
+    vec3(point); // Truncates the w coordinate.
+    
 When calling the above functions, you need to keep track of semantics yourself! Vec3's can be used for vectors, points, and colors. Depending on the use it may not make sense to call the above functions. 
 
 ### Matrices
@@ -75,6 +78,10 @@ To actually create a translation or a rotation matrix you can do the following:
     mat4 axisRotate = rotate(matrix, radians(45.0f), vec3(3.1,-2.1,0.9)); // Equivalent to axisRotate = matrix * rotationMatrix. Think about whether this order is important to you.
     
     mat4 translate = translate(mat4(1.0), vec3(1, 2, 3));
+    
+    glm::column(translate, 3, vec4(2, 2, 2, 1); // sets the forth column (index 3) of the translate matrix to the vector
+    
+    vec3 displacement = vec3(column(translate, 3)); // gets the translation component from the translate matrix
 
 ## Swizzle Functions
 
