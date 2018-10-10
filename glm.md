@@ -100,3 +100,6 @@ GLM vectors and matrices can easily be passed to shaders via the corresponding g
 Alternatively, you can use `value_ptr()`, found in `glm/gtc/type_ptr.hpp`, which accomplishes the same thing:
 
     glUniformMatrix3fv(location, 1, GL_FALSE, glm::value_ptr(matrix));
+    
+#### Attribution
+Modified from an original by Andy Van Dam at Brown.
