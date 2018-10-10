@@ -2,7 +2,7 @@
 
 ## GLM
 
-[GLM API Documentation](https://mac-comp465-f18.github.io/docs/glm/index.html)
+[GLM API Documentation](https://mac-comp465-f18.github.io/docs/glm/api/index.html)
 
 ## OpenGL
 
